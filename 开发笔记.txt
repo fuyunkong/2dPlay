@@ -1,0 +1,86 @@
+1.0 创建一个空的unity项目
+	提交。
+1.1总结 
+	git第一次提交后
+	空的文件夹会被忽略(不会被提交）。
+2.0 将要实现的功能
+	01，在Assets文件下创建用于资源管理的文件夹
+		wTexture 图片资源
+		wScripts 脚本资源
+		wScenes	场景资源
+		wPrefabs 资源预设
+		wPlug-in 使用第三方插件
+			导入2D界面制作插件 NGUI
+			导入脚本编辑连接插件 Visual Studio 2012 for unity
+	02，设计界面
+			001,splash 启动界面 
+				图片资源 splash_bg.png 
+						 splash_icon.png
+				组件实现
+					标签(label) splash_bg
+					标签(label) splash_icon
+				实现功能
+					2秒之后进入menu界面（splash.cs）
+			002,menu   菜单界面 
+			    图片资源 menu_bg.png 
+						 menu_icon.png
+						 menu_button_play.png
+						 menu_button_setting.png
+						 menu_button_help.png
+						 menu_button_about.png
+						 menu_button_exit.png
+				组件实现
+					标签(label) menu_bg
+					标签(label) menu_icon
+					标签(label) menu_introduction
+
+					按钮（button) menu_play
+					按钮（button) menu_setting
+					按钮（button) menu_help
+					按钮（button) menu_about
+					按钮（button) menu_exit
+				实现功能
+					点击play按钮    进入游戏界面
+					点击setting按钮 进入设置界面
+					点击help按钮	进入帮助界面
+					点击about按钮	进入关于界面
+					点击exit按钮	退出游戏
+					(menu.cs)
+			003,help    帮助
+			    图片资源 help_bg.png 
+						 
+				组件实现
+					标签(label) help_bg
+					标签(label) help_text
+
+					按钮（button) help_return
+				实现功能
+					点击返回按钮进入menu界面（help.cs）
+			004，setting 设置
+				图片资源 setting_bg.png 
+						 
+				组件实现
+					标签(label) setting_bg
+
+					标签(label) setting_music
+					滑动条（slider） setting_music_slider
+
+					按钮（button) setting_return
+				实现功能
+					点击返回按钮进入menu界面（setting.cs）
+			005,about	关于
+				图片资源 about_bg.png 
+						 
+				组件实现
+					标签(label) about_bg
+					标签(label) about_text 
+					按钮（button) about_return
+				实现功能
+					点击返回按钮进入menu界面（about.cs）
+			006,拓展
+				tortoiseGit状态图标
+				  命令行打开注册表 cmd regedit
+				  一般是由于 安装其他的 状态图标叠加程序导致的， 比如 微软的onedriver 或者 金山快盘   之类的工具， 可以把 
+				HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellIconOverlayIdentifiers
+				里面的除了  TortoiseSVN 之类的有关的可以删掉 （只读前十五个）
+				正在在加载。。。
